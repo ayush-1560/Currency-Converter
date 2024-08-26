@@ -1,0 +1,175 @@
+/* Enhanced Background and Font */
+body {
+  background: linear-gradient(135deg,#00feba,#5b548a);
+  background-image: url(bgi.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Container Styling */
+.container {
+  background: linear-gradient(135deg, #a2c2e8 0%, #d6e8f0 100%);
+  max-width: 500px;
+  margin: 5rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Title */
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+/* Amount Input */
+.amount {
+  margin-bottom: 1rem;
+}
+
+.amount p {
+  margin: 0;
+  font-weight: 600;
+}
+
+.amount input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-top: 0.5rem;
+  box-shadow: 0px 4px 8px rgba(89, 84, 232, 0.1);
+  box-sizing: border-box;
+}
+
+/* Dropdowns Container */
+.dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+/* From and To Divs */
+.from, .to {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.from .select-container,
+.to .select-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.select-container img {
+  width: 40px;
+  border-radius: 4px;
+}
+
+/* Exchange Icon */
+.exchange-icon {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0 1rem;
+}
+
+/* Button Styling */
+button {
+  width: 100%;
+  padding: 0.75rem;
+  background: linear-gradient(45deg, #4a90e2, #0066cc);
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #4a90e2, #0066cc);
+  transform: scale(1.05);
+}
+
+/* Message Styling */
+.msg {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Select2 Customization */
+.select2-container--default .select2-selection--single {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  padding-left: 0.75rem;
+  line-height: 3rem;
+  font-size: 1.1rem;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 100%;
+  right: 1rem;
+}
+
+/* Input Focus */
+.amount input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 8px rgba(102, 172, 234, 0.5);
+  outline: none;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .dropdown {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .from, .to {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Dark Mode Enhancements */
+body.dark-mode {
+  background: #333;
+  color: #fff;
+}
+
+.container.dark-mode {
+  background: #444;
+}
+
+button.dark-mode {
+  background: #1b5e20;
+}
+
+button.dark-mode:hover {
+  background: #2e7d32;
+}
+
+.msg.dark-mode {
+  color: #fff;
+}
