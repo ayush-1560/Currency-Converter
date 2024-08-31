@@ -36,7 +36,8 @@ const updateExchangeRate=async ()=>{
         let data = await res.json();
         let rate = data.conversion_rates[toCurrency];
         let finalAmt = amountVal * rate;
-        msg.innerText=`${amountVal} ${fromCurr.value} =${finalAmt}${toCurr.value}`;
+        let finalAmtr=finalAmt.toFixed(2);
+        msg.innerText=`${amountVal} ${fromCurr.value} = ${finalAmtr} ${toCurr.value}`;
     } catch (err) {
         console.log("Error:", err);
     }
